@@ -3,22 +3,20 @@
     background-color: var(--main-title-color);
     border: 1px solid #ECECEC
 }
-
-.header-navigation {
+.header__container {
+    display: flex;
+    align-items: center;
+}
+.navigation__set {
     display: flex;
     align-items: center;
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-}
-
-.header-list {
+.navigation__list {
     display: flex;
     gap: 50px;
 }
-.header-link {
+.navigation__link {
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 14px;
@@ -30,32 +28,64 @@
     transition-duration: 250ms;
     display: block;
     padding: 32px 0;
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        }
 }
 
-.header-link.current {
+.navigation__link.current {
     position: relative;
     display: block;
     text-decoration: none;
     color: var(--accent-color);
     padding: 32px 0;
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: #2196F3;
+        border-radius: 2px
+        }
+}
+.header__conect {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+
 }
 
-.header-link.current::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background: #2196F3;
-    border-radius: 2px
+.conect__link {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--maine-text-color);
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    margin-left: auto;
+    gap: 10px;
+    transition-property: color;
+    transition-timing-function: var(--timing-function);
+    transition-duration: 250ms;
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.header-link:hover,
-.header-link:focus,
-.header-link.current:hover,
-.header-link.current:focus,
-.button:hover {
-    color: var(--accent-color);
+.icon {
+    align-items: center;
+    margin-left: 10px;
+    fill: currentColor;
 }

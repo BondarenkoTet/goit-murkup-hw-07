@@ -1,5 +1,4 @@
-.header-logo,
-.footer-logo {
+.logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -7,9 +6,11 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }
-.header-logo span {
+
+.logo__part--black {
     color: #000000;
 }
-.footer-logo span {
+.logo__part--white {
     color: #FFFFFF;
 }
+

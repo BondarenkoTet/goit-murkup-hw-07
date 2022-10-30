@@ -1,21 +1,21 @@
-.about {
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
-.about-list {
+.about__list {
     display: flex;
     gap: 30px;
 }
 
-.about-item::before {
+.about__item::before {
     display: block;
     content: "";
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F5F4FA;
-
+    
 }
+
+/*.conect-icon:hover .conect-icon:focus {
+    color: var(--accent-color);
+}*/
 
 .icon-antenna::before {
     background-image: url(../images/antenna1\(1\).svg);
@@ -24,6 +24,7 @@
 .icon-clock::before {
     background-image: url(../images/clock1\(1\).svg);
 }
+
 .icon-diagram::before {
     background-image: url(../images/diagram1.svg);
 }
@@ -32,7 +33,7 @@
     background-image: url(../images/astronaut\(1\).svg);
 }
 
-.about-subtitle {
+.about__subtitle {
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 14px;
@@ -43,7 +44,7 @@
     padding-top: 30px;
     padding-bottom: 10px;
 }
-.about-text {
+.about__text {
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 14px;

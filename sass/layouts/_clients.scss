@@ -32,15 +32,14 @@
     transition-property: color, border;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
+    &:hover,
+    &:focus {
+        border: 1px solid;
+        color: var(--accent-color);
+        }
 }
-
 
 .client-soc-icon {
     fill: currentColor;
 }
 
-.clients-soc-link:hover,
-.clients-soc-link:focus {
-    border: 1px solid;
-    color: var(--accent-color);
-}

@@ -9,57 +9,21 @@
     margin-bottom: 50px;
 }
 
-.selection-button {
-    font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    /* identical to box height, or 162% */
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    background: #F5F4FA;
-    cursor: pointer;
-    /* shadow-middle */
-    padding: 6px 22px;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    border-bottom: 1px solid #ECECEC;
-    border: none;
-    transition-property: background-color, color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
-}
-
-.selection-button:hover,
-.selection-button:focus {
-    color: var(--main-title-color);
-    background: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .selection-link {
     display: block;
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
-}
-
-.selection-link:hover,
-.selection-link:focus {
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);
+        }
 }
 
 .selection-item {
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
-}
-
-.selection-item:hover .selection-top-text {
-    transform: translateY(0);
-
-
 }
 
 .selection-top-wrap {
@@ -82,6 +46,9 @@
     transform: translateY(100%);
     transition: transform 300ms linear;
     overflow: auto;
+    .selection-item:hover & {
+        transform: translateY(0);
+    }
 }
 
 .selection-subtitle {
@@ -99,7 +66,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-    /* identical to box height, or 188% */
     letter-spacing: 0.03em;
     color: #757575;
 }
