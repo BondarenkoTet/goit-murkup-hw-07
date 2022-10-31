@@ -1,7 +1,5 @@
 .header {
-    display: block;
-    background-color: var(--main-title-color);
-    border: 1px solid #ECECEC
+    border-bottom: 1px solid #ECECEC;
 }
 .header__container {
     display: flex;
@@ -10,11 +8,14 @@
 .navigation__set {
     display: flex;
     align-items: center;
+    margin-left: 91px;
 }
 
 .navigation__list {
     display: flex;
     gap: 50px;
+    margin: 0;
+    padding: 0;
 }
 .navigation__link {
     font-family: var(--main-font);
@@ -58,7 +59,7 @@
 }
 .header__conect {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     margin-left: auto;
 
 }

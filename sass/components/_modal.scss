@@ -105,12 +105,12 @@
     }
 }
 
-.treaty {
+.treaty   {
     color: var(--accent-color);
 }
-.modal-treaty span {
+/*.modal-treaty span {
     color: var(--accent-color);
-}
+}*/
 
 .check-text {
     font-weight: 400;
@@ -135,15 +135,16 @@
         fill: transparent;
         position: relative;
     }
-    .input-check:checked+&  {
+}
+    .input-check:checked +.check-text span{
     background-color: var(--accent-color);
     border-color: transparent;
     fill: #FFFFFF;
     }
-    .input-check:focus+&  {
+    .input-check:focus +.check-text span {
     border-color: var(--accent-color);
     }
-}
+
 
 
 
